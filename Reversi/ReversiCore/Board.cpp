@@ -5,8 +5,6 @@ Board::Board(const Board& board)
 {
 	for (size_t i = 0; i < board.m_fields.size(); ++i)
 	{
-		// TODO das Problem könnte sein, dass push_back die Referenz übernimmt (und keine Kopie).
-		// eventuell einfacher Fix wäre: Board.createCopy(). 
 		m_fields.push_back(board.m_fields.at(i));
 	}
 }

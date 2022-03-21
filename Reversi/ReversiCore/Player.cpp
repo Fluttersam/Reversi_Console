@@ -90,9 +90,10 @@ Position Player::selectPossibleFieldMostTokens(const Board& originalBoard)
 	unsigned int tokensToTurn = 0;
 	std::vector<Field> occupiedFields = m_occupiedFields;
 
-	//Board board(originalBoard);
 	Board board;
 
+	// different approach to calculate changes with saving and loading the board with a string
+	//Board board(originalBoard);
 	//board.saveBoard();
 
 	for (size_t i = 0; i < m_possibleFields.size(); ++i)
